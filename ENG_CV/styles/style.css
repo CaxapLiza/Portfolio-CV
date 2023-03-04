@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+body {
+    max-width: 950px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;    
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+/*---------------------------HEADER----------------------------*/
+
+/* Home About me Skills Portfolio Contacts */
+.header__list {
+    display: flex;
+    list-style-type: none;
+    /* gap: 15.8%; */
+    gap: calc((100% - 312.56px)/4);
+    margin: 32px auto;
+    padding-inline-start: 0px;
+    width: 90%;
+}
+
+.about_me { width: 72px; }
+
+.link {    
+    text-decoration: none;
+    color: #828282;
+}
+
+.link:hover {
+    color: #070707;
+    text-decoration: underline;
+}
+
+.header__hr {
+    color: #070707;
+    margin: 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 1px solid #333;
+}
+
+/*----------------------------BODY-----------------------------*/
+/*----------------------------NAME-----------------------------*/
+
+
+.container__text {
+    width: 171px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    /* gap: 30.4%; */
+    gap: calc((100% - 505px)/2);
+    margin: 40px auto;
+    width: 95%;
+}
+
+/* Liza Babekha */
+
+.container__h1 {
+    font-size: 47px;
+    margin: 0;
+    width: 260px;
+}
+
+/* RU | ENG */
+
+.container__lang {
+    transform: rotate(-90deg);
+    width: 77px;
+    height: 23.2px;
+}
+
+.container__lang__eng {
+    color: #070707;    
+}
+
+/*-------------------------MAIN_PHOTO--------------------------*/
+
+.image {
+    width: 100%;
+}
+
+/*--------------------------ABOUT_ME---------------------------*/
+
+.grey_block {
+    background-color: #E5E5E5;
+    margin-top: 107px;
+    text-align: center;
+    display: block;
+}
+
+/* About me */
+
+.grey_block__h2 {
+    font-size: 34px;
+    padding-top: 120px;
+    margin: 0 auto 47px;
+    max-width: 155.65px;
+    text-align: center;
+}
+
+/* Hi... */
+
+.grey_block__span {
+    max-width: 459px;
+    margin: 0 auto;
+    padding-bottom: 98px;
+    text-align: center;    
+    line-height: 23px;
+}
+
+/*---------------------------SKILLS----------------------------*/
+
+.white_block {
+    margin-top: 92px;
+    text-align: center;
+}
+
+/* Skills */
+
+.white_block h2 {
+    margin-bottom: 54px;
+    font-size: 34px;
+}
+
+/* I use... */
+
+.white_block > span {
+    margin-bottom: 74px;
+}
+
+.skills {
+    display: flex;
+    max-width: 939px;
+    margin: 83px auto 109px;
+    width: 96%;
+    justify-content: space-between;
+}
+
+.skills__row {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.skills__skill {
+    display: block;
+    width: 166px;
+    text-align: center;
+    width: 45%;
+}
+
+.skills__skill > img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 37px;
+    align-items: center;
+}
+
+/* C# HTML 5 CSS Python */
+
+.skills__skill span {
+    display: block;
+    margin-bottom: 54px;
+}
+
+/*--------------------------PORTFOLIO--------------------------*/
+
+.grey_block__image {
+    width: 95%;
+    margin: 0 auto 44px;
+}
+
+.grey_block__link {
+    color: #070707;
+    margin: 0 auto 99px;
+}
+
+.grey_block__padd {
+    padding-bottom: 96px;
+}
+
+/*---------------------------FOOTER----------------------------*/
+
+.footer {
+    text-align: center;
+    margin-top: 114px;
+}
+
+/* Contacts */
+
+.footer__h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+/* Want to... */
+
+.footer__div {
+    margin-bottom: 30px;
+}
+
+.footer__link__img {
+    width: 40px; 
+    padding-bottom: 40px;   
+}
+
+@media (max-width: 768px) {
+    .skills {
+        display: block;
+    }
+    
+    .skills__row {
+        width: 96%;
+        margin: 40px auto;
+    }    
+}
+
+@media (max-width: 576px) {
+    .container { 
+        display: block; 
+        margin-bottom: 10px;
+    }
+    .container__h1 {
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+    .container__lang { 
+        transform: none; 
+        margin: auto;
+    }
+    .container__text {
+        text-align: center;
+        width: 70%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__list { display: none; }
+    .header__hr { display: none; }
+    
+    .image { margin: 10px auto;}
+    .grey_block { margin: 10px auto; }
+    .grey_block__h2 { 
+        padding-top: 50px;
+    }
+    .grey_block__span { width: 80%; padding-bottom: 50px; }
+    .white_block { margin: 50px auto; }
+    .skills__row { display: block; }
+    .skills { 
+        display: block; 
+        margin: 10px;
+    }
+    .skills__skill { margin: 20px auto; }
+    .skills__skill img { margin-bottom: 20px; }
+    .skills__skill span { margin-bottom: 30px; }
+}
