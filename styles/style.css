@@ -7,6 +7,9 @@ body {
     margin: 0 auto;
     font-weight: 400;
     width: 98%;
+    
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
 }
 
 /*---------------------------HEADER----------------------------*/
